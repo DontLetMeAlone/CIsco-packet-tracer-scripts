@@ -2,9 +2,9 @@
 ![image](https://user-images.githubusercontent.com/54288899/213748753-b4e61697-2d89-4ec0-a9b6-da43b78413a2.png)
 
 
-
 Alle scripts zijn in deze repository te vinden pas het script aan naar het ip plan en je zit gebakken.
 bij de switcht script moet je de hostname telkens veranderen naar de juiste naam van de switch.
+VOOR SWITCH 3 APARTE SCRIPT GEBRUIKEN!!!
 bij de isp moet je port 100fx toevoegen en bij de DNS server 1FFE poort veranderen.
 
 vergeet niet bij de isp de poorten naar een glasvezelport te veranderen en bij de DNS server
