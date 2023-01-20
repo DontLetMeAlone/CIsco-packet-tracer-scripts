@@ -1,0 +1,86 @@
+hostname P_Edge
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ description P_Edge naar P_MLS
+ ip address 10.1.1.1 255.255.255.252
+ ip nat inside
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ description DHCP Client
+ ip address dhcp
+ ip nat outside
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ log-adjacency-changes
+ passive-interface GigabitEthernet0/0/0
+ network 10.1.1.0 0.0.0.3 area 0
+ network 12.12.12.0 0.0.0.255 area 0
+ default-information originate
+!
+ip nat inside source list 1 interface GigabitEthernet0/0/1 overload
+ip classless
+ip route 172.16.10.0 255.255.255.0 10.1.1.2 
+ip route 172.16.20.0 255.255.255.0 10.1.1.2 
+ip route 172.16.30.0 255.255.255.0 10.1.1.2 
+ip route 172.16.40.0 255.255.255.0 10.1.1.2 
+ip route 172.16.50.0 255.255.255.0 10.1.1.2 
+ip route 172.16.99.0 255.255.255.0 10.1.1.2 
+ip route 0.0.0.0 0.0.0.0 12.12.12.1 
+!
+ip flow-export version 9
+!
+!
+access-list 1 permit any
+!
+no cdp run
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end

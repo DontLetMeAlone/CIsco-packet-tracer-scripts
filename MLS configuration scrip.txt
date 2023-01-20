@@ -1,0 +1,190 @@
+hostname P_MLS
+!
+!
+!
+ip dhcp excluded-address 172.16.10.0 172.16.10.50
+ip dhcp excluded-address 172.16.20.0 172.16.20.50
+ip dhcp excluded-address 172.16.30.0 172.16.30.50
+ip dhcp excluded-address 172.16.40.0 172.16.40.50
+ip dhcp excluded-address 172.16.50.0 172.16.50.50
+ip dhcp excluded-address 172.16.99.0 172.16.99.50
+!
+ip dhcp pool VLAN10
+ network 172.16.10.0 255.255.255.0
+ default-router 172.16.10.1
+ dns-server 11.11.11.14
+ip dhcp pool vlan20
+ network 172.16.20.0 255.255.255.0
+ default-router 172.16.20.1
+ dns-server 11.11.11.14
+ip dhcp pool vlan30
+ network 172.16.30.0 255.255.255.0
+ default-router 172.16.30.1
+ dns-server 11.11.11.14
+ip dhcp pool vlan40
+ network 172.16.40.0 255.255.255.0
+ default-router 172.16.40.1
+ dns-server 11.11.11.14
+ip dhcp pool vlan50
+ network 172.16.50.0 255.255.255.0
+ default-router 172.16.50.1
+ dns-server 11.11.11.14
+ip dhcp pool vlan99
+ network 172.16.99.0 255.255.255.0
+ default-router 172.16.99.1
+ dns-server 11.11.11.14
+!
+!
+!
+no ip cef
+ip routing
+!
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree vlan 1-100 priority 4096
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet1/0/1
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/2
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/3
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/4
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/5
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/6
+!
+interface GigabitEthernet1/0/7
+!
+interface GigabitEthernet1/0/8
+!
+interface GigabitEthernet1/0/9
+!
+interface GigabitEthernet1/0/10
+!
+interface GigabitEthernet1/0/11
+!
+interface GigabitEthernet1/0/12
+!
+interface GigabitEthernet1/0/13
+!
+interface GigabitEthernet1/0/14
+!
+interface GigabitEthernet1/0/15
+!
+interface GigabitEthernet1/0/16
+!
+interface GigabitEthernet1/0/17
+!
+interface GigabitEthernet1/0/18
+!
+interface GigabitEthernet1/0/19
+!
+interface GigabitEthernet1/0/20
+!
+interface GigabitEthernet1/0/21
+!
+interface GigabitEthernet1/0/22
+!
+interface GigabitEthernet1/0/23
+!
+interface GigabitEthernet1/0/24
+ no switchport
+ ip address 10.1.1.2 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet1/1/1
+!
+interface GigabitEthernet1/1/2
+!
+interface GigabitEthernet1/1/3
+!
+interface GigabitEthernet1/1/4
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan10
+ mac-address 00e0.b08e.e301
+ ip address 172.16.10.1 255.255.255.0
+ ip helper-address 11.11.11.14
+!
+interface Vlan20
+ mac-address 00e0.b08e.e302
+ ip address 172.16.20.1 255.255.255.0
+ ip helper-address 11.11.11.14
+!
+interface Vlan30
+ mac-address 00e0.b08e.e303
+ ip address 172.16.30.1 255.255.255.0
+ ip helper-address 11.11.11.14
+!
+interface Vlan40
+ mac-address 00e0.b08e.e304
+ ip address 172.16.40.1 255.255.255.0
+ ip helper-address 11.11.11.14
+!
+interface Vlan50
+ mac-address 00e0.b08e.e305
+ ip address 172.16.50.1 255.255.255.0
+ ip helper-address 11.11.11.14
+!
+interface Vlan99
+ mac-address 00e0.b08e.e306
+ ip address 172.16.99.1 255.255.255.0
+ ip helper-address 11.11.11.14
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 10.1.1.1 
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+!
+end
