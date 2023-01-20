@@ -4,7 +4,8 @@
 
 
 Alle scripts zijn in deze repository te vinden pas het script aan naar het ip plan en je zit gebakken.
-
+bij de switcht script moet je de hostname telkens veranderen naar de juiste naam van de switch.
+bij de isp moet je port 100fx toevoegen en bij de DNS server 1FFE poort veranderen.
 
 vergeet niet bij de isp de poorten naar een glasvezelport te veranderen en bij de DNS server
 
@@ -14,3 +15,11 @@ daarna navigeer je naar deskop en klik je op pc wireless om verbinden met het wi
 
 
 check op alle routers en de server naar de interface/settings dat de ip's toegevoegd zijn en dat portstatus op on staat.
+
+
+volgorde van de scripts maakt in principe niet uit maar voor de zekerheid!
+ 
+1. MLS
+2. Switch
+3. p_edge
+4. ISP
