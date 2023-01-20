@@ -13,3 +13,4 @@ Alle laptops moeten wpc300n kaart hebben om te connecten met wifi (pc moet uit d
 daarna navigeer je naar deskop en klik je op pc wireless om verbinden met het wifi netwerk te maken die jij bij de accespoints heb gezet/gecreeerd 
 
 
+check op alle routers en de server naar de interface/settings dat de ip's toegevoegd zijn en dat portstatus op on staat.
