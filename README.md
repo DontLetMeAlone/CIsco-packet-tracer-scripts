@@ -2,6 +2,7 @@
 ![image](https://user-images.githubusercontent.com/54288899/213748753-b4e61697-2d89-4ec0-a9b6-da43b78413a2.png)
 
 
+om alles in dit repository te snappen moet je minimaal 1x naar de video's kijken
 Alle scripts zijn in deze repository te vinden pas het script aan naar het ip plan en je zit gebakken.
 bij de switcht script moet je de hostname telkens veranderen naar de juiste naam van de switch.
 VOOR SWITCH 3 APARTE SCRIPT GEBRUIKEN!!!
@@ -23,3 +24,5 @@ volgorde van de scripts maakt in principe niet uit maar voor de zekerheid!
 2. Switch
 3. p_edge
 4. ISP
+
+Op het eind op elke modem Ip route 0.0.0.0 0.0.0.0 en eind hop ip om de connecties tussen de routers in te stellen
