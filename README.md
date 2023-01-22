@@ -16,7 +16,8 @@ daarna navigeer je naar deskop en klik je op pc wireless om verbinden met het wi
 
 
 check op alle routers en de server naar de interface/settings dat de ip's toegevoegd zijn en dat portstatus op on staat.
-
+ga elke apparaat langs printers hebben een static ip volg het ip plan. routers controleren.
+Default Gateaway eindigt altijd met een .1 dns server ip is de .14 in het afbeelding.
 
 volgorde van de scripts maakt in principe niet uit maar voor de zekerheid!
  
