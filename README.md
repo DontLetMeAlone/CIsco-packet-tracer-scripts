@@ -63,7 +63,7 @@ Ssh –l admin01 192.168.1.1 (om in de edge te komen, hij is aangegeven dat je d
 Daarna gebruik je de commands show ip interface brief om alle IP-adressen te zien, die vul je dan in de tabel.
 Daarna show run om de maskers te zien. Dus van S0/0/0 moet je die invullen en dat is 255.255.255.252
 Om te zien welke interfaces met Edge verbonden zijn, gebruik je de command
-Show lldp neighbours
+Show lldp neighbors
 Als lldp niet aan staat, dan doe je:
 config t
 Lldp run 
@@ -72,7 +72,7 @@ Daarna kijk je naar de Port ID, Device ID en Local interface
 Port ID = Gig 0/1
 Device ID = S1
 Local interface = Gig 0/0
-Daarna vul je in bij de kolom van Local Interface en Connected Neighbours alleen Gig0/1 | S1 in.
+Daarna vul je in bij de kolom van Local Interface en Connected Neighbors alleen Gig0/1 | S1 in.
 
 
 
@@ -94,7 +94,7 @@ Show run om de subnet maskers te zien
 Show lldp neighbors om te zien waar ze verbonden mee zijn. 
 En in dit geval zie je dan dat RBO-Firewall verbonden is met RBO-Edge.
 “als een ip adres wordt gebruikt dan is het vaak een ander ip-adres""
-RBO-Firewall is de neighbour van RBO-Edge
+RBO-Firewall is de neighbor van RBO-Edge
 
 Je gebruikt de command 
 Show ip route connected en dan is het netwerk 192.168.3.248, die heeft alleen maar 2 ip's door het subnet masker 255.255.255.192, dus je hebt deze twee ip-adressen: 192.168.3.250 en 192.168.3.251
