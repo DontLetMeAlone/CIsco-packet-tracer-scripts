@@ -171,3 +171,11 @@ Sh lldp nei
 Sh ip int brief
 Nu is de ip tabel af
 
+
+
+
+Video 3
+Hoe maak je een tekening in Visio? Tip: zet de schermen naast elkaar, de gegevens van de tabel. 
+Je neemt een PC, aantal switches, router, ( als het te groot is moet je die kleiner maken)
+Invoegen > verbindingslijn ( om lijnen te trekken)
+Invoegen > bijschrift ( om de apparatuur een naam te geven)
