@@ -32,7 +32,7 @@ Ip route 0.0.0.0 0.0.0.0 Lo1 (alleen bij isp)
 
 
 
-https://discord.gg/Wf7AXVXGHM <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+https://discord.gg/NCBF5VvF2m <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 discord link ^^^^^^^
 
