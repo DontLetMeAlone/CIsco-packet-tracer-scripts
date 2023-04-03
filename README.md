@@ -91,7 +91,7 @@ ssh –l RBOadmin 209.165.200.10
 
 Daarna gebruik je de command show ip interface brief (afgekort: sh ip int brief) om te zien waarmee de RBO-Edge verbonden is, in dit geval is dat met G0/1 en G/0.
 Show run om de subnet maskers te zien
-Show lldp neighbours om te zien waar ze verbonden mee zijn. 
+Show lldp neighbors om te zien waar ze verbonden mee zijn. 
 En in dit geval zie je dan dat RBO-Firewall verbonden is met RBO-Edge.
 “als een ip adres wordt gebruikt dan is het vaak een ander ip-adres""
 RBO-Firewall is de neighbour van RBO-Edge
@@ -114,7 +114,7 @@ RBO-Firewall
 Ssh –l RBOadmin 192.168.3.250 om in RBO-Firewall te komen
 Als je sh ip int brief gebruikt dan kent hij een interface Gi0/0 en Gi0/0 bij de RBO-Firewall
 Daarna gebruik je show run om alle maskers te zien
-En daarna show lldp neighbours om te kijken met wie hij verbonden is. 
+En daarna show lldp neighbors om te kijken met wie hij verbonden is. 
 Vul dit allemaal in het tabel!
 Als een je een ip adress ziet dan is dat het netwerk en dan als het een subnet van 255.255.255.252 heeft / 30 dan weet je dat hij 2 ip adressen gebruikt. (na 2 tellen verder dus niet 1 en 2 maar bij 3 en 4 als je 1.1.1.1 als netwerk hebt dan ping je 1.1.1.3 en 1.1.1.4 bij dat subnet)
 Bij RBO-Firewall is gig0/1 het ip-adress 192.168.4.254, daar is het ip-adres van de gateway 192.168.4.255.
@@ -128,8 +128,8 @@ Ssh –l RBOadmin 192.168.4.131
 Daarna gebruik je de command:
 Sh ip interface brief om te zien welke interfaces hij kent
 Daarna gebruik je
-Sh lldp neighbours om te kijken met wie hij verbonden is
-Bij het vakje local interface and connected neighbour vul je de Device ID en local interface in bij de command show lldp neighbours
+Sh lldp neighbors om te kijken met wie hij verbonden is
+Bij het vakje local interface and connected neighbour vul je de Device ID en local interface in bij de command show lldp neighbors
 Daarna gebruik je show run om de masks te zien:
 
 
@@ -146,7 +146,7 @@ Ssh –l RBOAdmin 192.168.4.132
 Sw-rb02
 Interface brief
 Vlan 1 192.168.4.132
-Sh lldp neighbours
+Sh lldp neighbors
 SW-RB03
 Sw-rbo 3
 Ssh –l RBOadmin 192.168.4.133
