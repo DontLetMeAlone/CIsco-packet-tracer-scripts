@@ -48,24 +48,7 @@ Bij invoegen kun je apparaten met elkaar verbinden door Verbindingslijnen te kie
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+----------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -172,7 +155,7 @@ Sh ip int brief
 Nu is de ip tabel af
 
 
-
+-------------------------------------------------------------------------------------------------------------------
 
 Video 3
 Hoe maak je een tekening in Visio? Tip: zet de schermen naast elkaar, de gegevens van de tabel. 
