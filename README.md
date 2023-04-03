@@ -129,7 +129,7 @@ Daarna gebruik je de command:
 Sh ip interface brief om te zien welke interfaces hij kent
 Daarna gebruik je
 Sh lldp neighbors om te kijken met wie hij verbonden is
-Bij het vakje local interface and connected neighbour vul je de Device ID en local interface in bij de command show lldp neighbors
+Bij het vakje local interface and connected neighbor vul je de Device ID en local interface in bij de command show lldp neighbors
 Daarna gebruik je show run om de masks te zien:
 
 
